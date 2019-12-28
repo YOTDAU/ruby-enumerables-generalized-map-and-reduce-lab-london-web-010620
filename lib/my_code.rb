@@ -21,11 +21,11 @@ def reduce(array, starting_point  = nil)
     total = starting_point
     i = 0
   else 
-    total = array[0]
+    total = array[0] # if no starting value then create own starting point at the beginning of the array
     i = 1 
   end
   
-  while i < array.length do
+  while i < array.length do #
     total  = yield(total, array[i])
     i += 1
   end
