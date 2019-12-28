@@ -16,9 +16,8 @@ end
 #reduce returns a value
 
 def reduce(array, starting_point  = nil)
-  new = []
   
-  if starting_point
+  if starting_point # condition to check for starting value
     total = starting_point
     i = 0
   else 
