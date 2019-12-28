@@ -25,7 +25,7 @@ def reduce(array, starting_point  = nil)
     i = 1 
   end
   
-  while i < array.length do #
+  while i < array.length do #using yield keyword to pass two pieces of data (total(starting_point) and element of array) + looping over array until finished.  
     total  = yield(total, array[i])
     i += 1
   end
